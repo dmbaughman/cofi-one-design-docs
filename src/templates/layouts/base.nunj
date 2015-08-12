@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+<html>
+{% include "partials/head.nunj" %}
+
+<body class="{{ page.class }}">
+
+    {% include "partials/header.nunj" %}
+
+    <main class="main">
+    {% block content %}{% endblock %}
+    </main>
+
+    {% include "partials/footer.nunj" %}
+
+</body>
+
+</html>

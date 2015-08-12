@@ -1,0 +1,6 @@
+{
+    "indent": 4,
+    "browser": true,
+    "browserify": true,
+    "node": true
+}
