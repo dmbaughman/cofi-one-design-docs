@@ -1,3 +1,3 @@
 # Capital One Investing Style Guide Generator
 
-Node-based documentation generator using Metalsmith.
+Documentation generator for use by designers and developers.
