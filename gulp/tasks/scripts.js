@@ -1,19 +1,17 @@
 'use strict';
 
-// Imports
-var gulp        = require( 'gulp' ),
-    paths       = require( '../../gulp/strings' ).paths,
-    browserify  = require( 'browserify' ),
-    source      = require( 'vinyl-source-stream' ),
-    buffer      = require( 'vinyl-buffer' ),
-    globby      = require( 'globby' ),
-    through     = require( 'through2' ),
-    gutil       = require( 'gulp-util' ),
-    uglify      = require( 'gulp-uglify' ),
-    sourcemaps  = require( 'gulp-sourcemaps' ),
-    connect     = require( 'gulp-connect' );
+var gulp        = require( 'gulp' );
+var paths       = require( '../../gulp/strings' ).paths;
+var browserify  = require( 'browserify' );
+var source      = require( 'vinyl-source-stream' );
+var buffer      = require( 'vinyl-buffer' );
+var globby      = require( 'globby' );
+var through     = require( 'through2' );
+var gutil       = require( 'gulp-util' );
+var uglify      = require( 'gulp-uglify' );
+var sourcemaps  = require( 'gulp-sourcemaps' );
+var connect     = require( 'gulp-connect' );
 
-// Compile scripts
 gulp.task( 'scripts', function () {
   // gulp expects tasks to return a stream, so we create one here.
   var bundledStream = through();

@@ -1,3 +1,5 @@
+'use strict';
+
 var gulp = require( 'gulp' );
 
 gulp.task( 'icon-font', function() {
