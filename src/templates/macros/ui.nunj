@@ -1,11 +1,16 @@
 {% macro codeExample( title, description='' ) %}
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h2 class="panel-title">{{ title }}</h2>
+            <h3 class="panel-title">{{ title }}</h3>
         </div>
         <div class="panel-body">
+            {% if description %}
+            <p>{{ description }}</p>
+            <hr>
+            {% endif %}
             {{ caller() }}
-            <pre>{{ caller() | escape }}</pre>
+            {# @TODO: Replace this inline style #}
+            <pre style="margin-top: 10px;">{{ caller() | escape }}</pre>
         </div>
     </div>
 {% endmacro %}

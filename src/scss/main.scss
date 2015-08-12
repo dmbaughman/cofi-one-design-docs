@@ -1,1 +1,11 @@
 @import "bootstrap-sass/assets/stylesheets/bootstrap";
+
+$logo-width: 231px;
+$logo-height: 50px;
+
+.brand-logo {
+    width: $logo-width;
+    height: $logo-height;
+    margin-top: $grid-gutter-width / 2;
+    margin-bottom: $grid-gutter-width / 2;
+}

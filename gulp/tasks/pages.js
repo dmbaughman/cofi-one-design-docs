@@ -3,6 +3,7 @@
 var gulp        = require( 'gulp' );
 var paths       = require( '../../gulp/strings' ).paths;
 var nunjucks    = require( 'gulp-nunjucks-html' );
+var connect     = require( 'gulp-connect' );
 
 gulp.task( 'pages', function() {
     return gulp.src( paths.templatesContent )
@@ -16,5 +17,6 @@ gulp.task( 'pages', function() {
             return env;
         }
     }))
-    .pipe( gulp.dest( paths.root ));
+    .pipe( gulp.dest( paths.root ))
+    .pipe( connect.reload() );
 });

@@ -2,19 +2,54 @@
 
 {% import "macros/ui.nunj" as ui %}
 
+{% set descriptions = {
+    headings: 'Use headings to visually indicate the hierarchy of page sections',
+    bodyCopy: 'Body copy should be used to communicate detailed information to users.',
+    leadCopy: 'Lead copy is useful for subheadings or to call attention to important high-level information.',
+    buttonOptions: 'Each button style represents a different type of action.'
+} %}
+
 {% block content %}
     <div class="container">
 
-{% set description = 'Each heading level has its own size to visually represent the heading hierarchy.' %}
-{% call ui.codeExample( title='Typography', description=description ) -%}
+        <h2>Typography</h2>
+
+        {% call ui.codeExample( title='Headings', description=descriptions.headings ) -%}
 <h1>h1. Heading</h1>
 <h2>h2. Heading</h2>
 <h3>h3. Heading</h3>
 <h4>h4. Heading</h4>
 <h5>h5. Heading</h5>
 <h6>h6. Heading</h6>
-{%- endcall %}
+        {%- endcall %}
+
+        {% call ui.codeExample( title='Body copy', description=descriptions.bodyCopy ) -%}
+<p>Aenean vestibulum metus pellentesque elit faucibus, placerat gravida nisl consequat. Maecenas dignissim, mauris id feugiat fringilla, nibh arcu interdum turpis, eu ornare orci velit quis nisi. Donec pulvinar tempus urna eget placerat.</p>
+        {%- endcall %}
+
+        {% call ui.codeExample( title='Lead copy', description=descriptions.leadCopy ) -%}
+<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Etiam pellentesque mollis metus, eget suscipit metus.</p>
+        {%- endcall %}
+
+
+        <h2>Buttons</h2>
+
+        {% call ui.codeExample( title="Options", description=descriptions.buttonOptions ) %}
+<button type="button" class="btn btn-primary">Call to action</button>
+<button type="button" class="btn btn-info">Learn more</button>
+<button type="button" class="btn btn-default">Go back</button>
+<button type="button" class="btn btn-danger">Delete</button>
+<button type="button" class="btn btn-link">Link</button>
+        {% endcall %}
+
+        {% call ui.codeExample( title="Options", description=descriptions.buttonOptions ) %}
+<button type="button" class="btn btn-info btn-lg">Large</button>
+<button type="button" class="btn btn-info">Regular</button>
+<button type="button" class="btn btn-info btn-sm">Small</button>
+<button type="button" class="btn btn-info btn-xs">x-small</button>
+        {% endcall %}
 
 
     </div>
+
 {% endblock %}
