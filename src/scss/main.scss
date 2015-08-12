@@ -9,3 +9,37 @@ $logo-height: 50px;
     margin-top: $grid-gutter-width / 2;
     margin-bottom: $grid-gutter-width / 2;
 }
+
+.icon-example-list {
+    @include make-row();
+}
+
+.icon-example {
+    @include make-xs-column(12);
+    @include make-sm-column(4);
+    @include make-md-column(3);
+    border: 1px solid #fff;
+    background: $gray-lighter;
+    transition: all .1s ease-in-out;
+
+    &:hover {
+        background: $blue-alt;
+        color: #fff;
+    }
+    
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        &:nth-child(3n + 1) {
+            clear: both;
+        }
+    }
+    
+    @media (min-width: $screen-md-min) {
+        &:nth-child(4n + 1) {
+            clear: both;
+        }
+    }
+
+    &-inner {
+        padding: $padding-base-vertical $padding-base-horizontal;
+    }
+}

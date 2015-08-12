@@ -123,11 +123,35 @@
         
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">Options</h3>
+            <h3 class="panel-title">Ghost variants</h3>
         </div>
         <div class="panel-body">
             
-            <p>Each button style represents a different type of action.</p>
+            <p>Some buttons offer outlined or "ghost" variants.</p>
+            <hr>
+            
+            
+<button type="button" class="btn btn-info btn-ghost">Learn more</button>
+<button type="button" class="btn btn-default btn-ghost">Go back</button>
+        
+            
+            <pre style="margin-top: 10px;">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-ghost&quot;&gt;Learn more&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-ghost&quot;&gt;Go back&lt;/button&gt;
+        </pre>
+        </div>
+    </div>
+
+
+
+        
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Sizes</h3>
+        </div>
+        <div class="panel-body">
+            
+            <p>Various button sizes are available for different applications.</p>
             <hr>
             
             
@@ -147,6 +171,1667 @@
     </div>
 
 
+        
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Block level</h3>
+        </div>
+        <div class="panel-body">
+            
+            <p>A block level style is available to make buttons full-width within grid columns or other containers.</p>
+            <hr>
+            
+            
+<div class="row">
+    <div class="col-sm-4">
+        <button type="button" class="btn btn-primary btn-block">Submit</button>
+        <button type="button" class="btn btn-default btn-block">Go back</button>
+    </div>
+</div>
+        
+            
+            <pre style="margin-top: 10px;">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-primary btn-block&quot;&gt;Submit&lt;/button&gt;
+        &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-block&quot;&gt;Go back&lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+        </div>
+    </div>
+
+
+        
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Disabled state</h3>
+        </div>
+        <div class="panel-body">
+            
+            <p>Disabled buttons are given a lighter background and are not selectable.</p>
+            <hr>
+            
+            
+<button type="button" class="btn btn-primary" disabled>Call to action</button>
+<button type="button" class="btn btn-info" disabled>Learn more</button>
+<button type="button" class="btn btn-default" disabled>Go back</button>
+<button type="button" class="btn btn-danger" disabled>Delete</button>
+<button type="button" class="btn btn-link" disabled>Link</button>
+        
+            
+            <pre style="margin-top: 10px;">
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot; disabled&gt;Call to action&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot; disabled&gt;Learn more&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; disabled&gt;Go back&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot; disabled&gt;Delete&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-link&quot; disabled&gt;Link&lt;/button&gt;
+        </pre>
+        </div>
+    </div>
+
+
+        <h2>Forms</h2>
+
+        
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Basic form</h3>
+        </div>
+        <div class="panel-body">
+            
+            <p>Basic forms include input fields with a label for each field and a submit button.</p>
+            <hr>
+            
+            
+<form>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+        
+            
+            <pre style="margin-top: 10px;">
+&lt;form&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label for=&quot;exampleInputEmail1&quot;&gt;Email address&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail1&quot; placeholder=&quot;Email&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label for=&quot;exampleInputPassword1&quot;&gt;Password&lt;/label&gt;
+        &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;exampleInputPassword1&quot; placeholder=&quot;Password&quot;&gt;
+    &lt;/div&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Submit&lt;/button&gt;
+&lt;/form&gt;
+        </pre>
+        </div>
+    </div>
+
+
+        
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Inline form</h3>
+        </div>
+        <div class="panel-body">
+            
+            <p>Inline forms are handy when you want the user to navigate the fields from left-to-right.</p>
+            <hr>
+            
+            
+<form class="form-inline">
+    <div class="form-group">
+        <label for="exampleInputName2">Name</label>
+        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputEmail2">Email</label>
+        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+    </div>
+    <button type="submit" class="btn btn-primary">Sign up</button>
+</form>
+        
+            
+            <pre style="margin-top: 10px;">
+&lt;form class=&quot;form-inline&quot;&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label for=&quot;exampleInputName2&quot;&gt;Name&lt;/label&gt;
+        &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;exampleInputName2&quot; placeholder=&quot;Jane Doe&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label for=&quot;exampleInputEmail2&quot;&gt;Email&lt;/label&gt;
+        &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;exampleInputEmail2&quot; placeholder=&quot;jane.doe@example.com&quot;&gt;
+    &lt;/div&gt;
+    &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Sign up&lt;/button&gt;
+&lt;/form&gt;
+        </pre>
+        </div>
+    </div>
+
+
+        
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Horizontal form</h3>
+        </div>
+        <div class="panel-body">
+            
+            <p>Horizontal forms take advantage of wide areas by placing labels to the left of their corresponding input fields.</p>
+            <hr>
+            
+            
+<form class="form-horizontal">
+    <div class="form-group">
+        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+        <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+        <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+    </div>
+</form>
+        
+            
+            <pre style="margin-top: 10px;">
+&lt;form class=&quot;form-horizontal&quot;&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label for=&quot;inputEmail3&quot; class=&quot;col-sm-2 control-label&quot;&gt;Email&lt;/label&gt;
+        &lt;div class=&quot;col-sm-10&quot;&gt;
+            &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;inputEmail3&quot; placeholder=&quot;Email&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;label for=&quot;inputPassword3&quot; class=&quot;col-sm-2 control-label&quot;&gt;Password&lt;/label&gt;
+        &lt;div class=&quot;col-sm-10&quot;&gt;
+            &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;inputPassword3&quot; placeholder=&quot;Password&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group&quot;&gt;
+        &lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;
+            &lt;button type=&quot;submit&quot; class=&quot;btn btn-primary&quot;&gt;Sign in&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+        </pre>
+        </div>
+    </div>
+
+
+        <h2>Icons</h2>
+        
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Filled icons</h3>
+        </div>
+        <div class="panel-body">
+            
+            <p>The default option for each icon is the filled variant.</p>
+            <hr>
+            
+            
+<span class="icon icon-arrow-up"></span>
+<span class="icon icon-plus"></span>
+<span class="icon icon-success"></span>
+<span class="icon icon-caution"></span>
+        
+            
+            <pre style="margin-top: 10px;">
+&lt;span class=&quot;icon icon-arrow-up&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;icon icon-plus&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;icon icon-success&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;icon icon-caution&quot;&gt;&lt;/span&gt;
+        </pre>
+        </div>
+    </div>
+
+
+        
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Outlined icons</h3>
+        </div>
+        <div class="panel-body">
+            
+            <p>Add the class <code>icon-outline</code> to enable the outlined variant.</p>
+            <hr>
+            
+            
+<span class="icon icon-outline icon-arrow-up"></span>
+<span class="icon icon-outline icon-plus"></span>
+<span class="icon icon-outline icon-success"></span>
+<span class="icon icon-outline icon-caution"></span>
+        
+            
+            <pre style="margin-top: 10px;">
+&lt;span class=&quot;icon icon-outline icon-arrow-up&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;icon icon-outline icon-plus&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;icon icon-outline icon-success&quot;&gt;&lt;/span&gt;
+&lt;span class=&quot;icon icon-outline icon-caution&quot;&gt;&lt;/span&gt;
+        </pre>
+        </div>
+    </div>
+
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Icon reference</h3>
+            </div>
+            <div class="panel-body">
+                <p>Use the class names below to implement icons, being sure to include the base <code>icon</code> optional <code>icon-outline</code> classes.</p>
+                
+    <ul class="icons-example-list list-inline">
+        <li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-arrow-up"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-arrow-up"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-arrow-up</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-arrow-down"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-arrow-down"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-arrow-down</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-arrow-left"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-arrow-left"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-arrow-left</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-arrow-right"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-arrow-right"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-arrow-right</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-plus"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-plus"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-plus</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-minus"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-minus"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-minus</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-close"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-close"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-close</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-success"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-success"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-success</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-caution"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-caution"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-caution</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-info"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-info"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-info</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-question"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-question"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-question</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-list"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-list"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-list</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-grid"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-grid"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-grid</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-arrow-back"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-arrow-back"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-arrow-back</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-show"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-show"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-show</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-hide"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-hide"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-hide</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-menu"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-menu"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-menu</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-cancel"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-cancel"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-cancel</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-overflow"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-overflow"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-overflow</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-search"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-search"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-search</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-edit"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-edit"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-edit</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-trash"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-trash"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-trash</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-settings"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-settings"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-settings</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-calendar"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-calendar"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-calendar</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-transfer"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-transfer"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-transfer</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-photo"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-photo"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-photo</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-comment"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-comment"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-comment</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-phone"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-phone"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-phone</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-upload"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-upload"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-upload</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-download"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-download"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-download</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-report"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-report"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-report</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-alert"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-alert"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-alert</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-attach"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-attach"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-attach</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-print"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-print"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-print</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-thumbs-up"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-thumbs-up"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-thumbs-up</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-thumbs-down"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-thumbs-down"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-thumbs-down</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-refresh"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-refresh"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-refresh</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-heart"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-heart"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-heart</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-home"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-home"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-home</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-person"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-person"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-person</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-locked"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-locked"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-locked</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-unlocked"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-unlocked"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-unlocked</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-check"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-check"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-check</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-credit-card"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-credit-card"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-credit-card</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-bank-branch"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-bank-branch"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-bank-branch</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-leaf"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-leaf"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-leaf</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-envelope"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-envelope"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-envelope</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-map-pin"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-map-pin"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-map-pin</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-map-arrow"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-map-arrow"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-map-arrow</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-gift"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-gift"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-gift</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-star"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-star"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-star</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-trophy"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-trophy"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-trophy</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-globe"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-globe"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-globe</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-clock"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-clock"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-clock</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-document"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-document"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-document</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-hourglass"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-hourglass"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-hourglass</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-people"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-people"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-people</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-lightning"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-lightning"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-lightning</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-mailbox"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-mailbox"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-mailbox</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-receipt"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-receipt"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-receipt</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-dollar"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-dollar"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-dollar</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-atm"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-atm"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-atm</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-calculator"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-calculator"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-calculator</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-interest"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-interest"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-interest</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-insurance"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-insurance"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-insurance</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-umbrella"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-umbrella"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-umbrella</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-car"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-car"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-car</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-house"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-house"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-house</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-automotive"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-automotive"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-automotive</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-bills"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-bills"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-bills</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-dining"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-dining"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-dining</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-entertainment"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-entertainment"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-entertainment</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-other"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-other"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-other</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-services"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-services"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-services</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-shopping"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-shopping"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-shopping</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-travel"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-travel"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-travel</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-transfers"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-transfers"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-transfers</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-deposit"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-deposit"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-deposit</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-withdrawal"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-withdrawal"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-withdrawal</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-play"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-play"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-play</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-pause"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-pause"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-pause</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-stop"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-stop"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-stop</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-record"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-record"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-record</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-previous"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-previous"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-previous</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-next"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-next"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-next</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-rewind"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-rewind"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-rewind</p>
+                    </div>
+                </div>
+            </div>
+        </li><li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-fast-forward"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-fast-forward"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-fast-forward</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+            </div>
+        </div>
 
     </div>
 

@@ -14,3 +14,27 @@
         </div>
     </div>
 {% endmacro %}
+
+{% macro iconExamples( icons ) %}
+    <ul class="icons-example-list list-inline">
+        {% for icon in icons -%}
+        <li class="icon-example">
+            <div class="icon-example-inner">
+                <div class="row">
+                    <div class="col-xs-3">
+                        <span class="h3">
+                            <span class="icon icon-{{ icon }}"></span>
+                        </span><br>
+                        <span class="h3">
+                            <span class="icon icon-outline icon-{{ icon }}"></span>
+                        </span>
+                    </div>
+                    <div class="col-xs-9">
+                        <p>icon-{{ icon | escape }}</p>
+                    </div>
+                </div>
+            </div>
+        </li>
+        {%- endfor %}
+    </ul>
+{% endmacro %}
