@@ -1,0 +1,242 @@
+{% extends "layouts/base.nunj" %}
+{% block content %}
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Typography</h2>
+            </div>
+            <div class="panel-body">
+                <h1>h1. Heading</h1>
+                <h2>h2. Heading</h2>
+                <h3>h3. Heading</h3>
+                <h4>h4. Heading</h4>
+                <h5>h5. Heading</h5>
+                <h6>h6. Heading</h6>            
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Buttons</h2>
+            </div>
+            <div class="panel-body">
+                <h4>Options</h4>
+                <ul class="list-inline">
+                    <li>
+                        <button type="button" class="btn btn-primary">Call to action</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-info">Learn more</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-default">Go back</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-link">Link</button>
+                    </li>
+                </ul>
+                <h4>Ghost variants</h4>
+                <ul class="list-inline">
+                    <li>
+                        <button type="button" class="btn btn-info btn-ghost">Learn more</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-default btn-ghost">Go back</button>
+                    </li>
+                </ul>
+                <h4>Sizes</h4>
+                <ul class="list-inline">
+                    <li>
+                        <button type="button" class="btn btn-info btn-lg">Large</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-info">Medium</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-info btn-sm">Small</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-info btn-xs">x-small</button>
+                    </li>
+                </ul>
+                <h4>Block level buttons</h4>
+                <div class="row">
+                    <div class="col-sm-6 col-md-4">
+                        <form class="form">
+                            <fieldset>
+                                <div class="well">
+                                    <div class="form-group">
+                                        <label>Username</label>
+                                        <input class="form-control" type="email">
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Password</label>
+                                        <input class="form-control" type="password">
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-primary btn-block">Sign in</button>
+                                    </div>
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-link btn-block">Need help signing in?</button>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                </div>
+
+                <h4>Disabled state</h4>
+                <ul class="list-inline">
+                    <li>
+                        <button type="button" class="btn btn-primary" disabled>Call to action</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-info" disabled>Learn more</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-default" disabled>Go back</button>
+                    </li>
+                    <li>
+                        <button type="button" class="btn btn-danger" disabled>Delete</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Forms</h2>
+            </div>
+            <div class="panel-body">
+                <h4>Basic form</h4>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" id="exampleInputFile">
+                        <p class="help-block">Example block-level help text here.</p>
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Check me out
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+                <br>
+                <h4>Inline Forms</h4>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label for="exampleInputName2">Name</label>
+                        <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail2">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign up</button>
+                </form>
+                <br>
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputAmount">Amount (in dollars)</label>
+                        <div class="input-group">
+                            <div class="input-group-addon">$</div>
+                            <input type="text" class="form-control" id="exampleInputAmount" placeholder="Amount">
+                            <div class="input-group-addon">.00</div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Make it rain</button>
+                </form>
+                <br>
+                <h4>Horizontal Form</h4>
+                <form class="form-horizontal">
+                    <div class="form-group">
+                        <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+                        <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+                        <div class="col-sm-10">
+                            <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <div class="checkbox">
+                                <label>
+                                    <input type="checkbox"> Remember me
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                            <button type="submit" class="btn btn-primary">Sign in</button>
+                        </div>
+                    </div>
+                </form>
+                <h4>Form states</h4>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Disabled field" value="Disabled field" disabled>
+                    </div>
+                    <div class="form-group has-success">
+                        <input type="text" class="form-control" placeholder="Success!" value="Success!">
+                    </div>
+                    <div class="form-group has-error">
+                        <input type="text" class="form-control" placeholder="Danger, Will Robinson!" value="Danger, Will Robinson!">
+                    </div>
+                </form>                
+            </div>
+        </div>
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h2 class="panel-title">Icons</h2>
+            </div>
+            <div class="panel-body">
+            <ul class="list-inline">
+                <li>
+                    <span class="icon icon-arrow-up"></span>
+                </li>                
+                <li>
+                    <span class="icon icon-arrow-down"></span>
+                </li>                
+                <li>
+                    <span class="icon icon-arrow-left"></span>
+                </li>                
+                <li>
+                    <span class="icon icon-arrow-right"></span>
+                </li>                
+                <li>
+                    <span class="icon icon-plus"></span>
+                </li>                
+                <li>
+                    <span class="icon icon-minus"></span>
+                </li>                
+                <li>
+                    <span class="icon icon-close"></span>
+                </li>                
+                <li>
+                    <span class="icon icon-success"></span>
+                </li>                
+                <li>
+                    <span class="icon icon-caution"></span>
+                </li>                
+            </ul>
+            </div>
+        </div>
+    </div>
+{% endblock %}
