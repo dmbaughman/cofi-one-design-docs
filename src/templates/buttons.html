@@ -1,0 +1,53 @@
+{% extends "layouts/base.nunj" %}
+
+{% import "macros/ui.nunj" as ui %}
+
+{% set descriptions = {
+    buttonOptions: 'Each button style represents a different type of action.',
+    buttonGhost: 'Some buttons offer outlined or "ghost" variants.',
+    buttonSizes: 'Various button sizes are available for different applications.',
+    buttonBlock: 'A block level style is available to make buttons full-width within grid columns or other containers.',
+    buttonDisabled: 'Disabled buttons are given a lighter background and are not selectable.'
+} %}
+
+{% block content %}
+    <h2>Buttons</h2>
+
+    {% call ui.codeExample( title="Options", description=descriptions.buttonOptions ) %}
+<button type="button" class="btn btn-primary">Call to action</button>
+<button type="button" class="btn btn-info">Learn more</button>
+<button type="button" class="btn btn-default">Go back</button>
+<button type="button" class="btn btn-danger">Delete</button>
+<button type="button" class="btn btn-link">Link</button>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Ghost variants", description=descriptions.buttonGhost ) %}
+<button type="button" class="btn btn-info btn-ghost">Learn more</button>
+<button type="button" class="btn btn-default btn-ghost">Go back</button>
+    {% endcall %}
+
+
+    {% call ui.codeExample( title="Sizes", description=descriptions.buttonSizes ) %}
+<button type="button" class="btn btn-info btn-lg">Large</button>
+<button type="button" class="btn btn-info">Regular</button>
+<button type="button" class="btn btn-info btn-sm">Small</button>
+<button type="button" class="btn btn-info btn-xs">x-small</button>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Block level", description=descriptions.buttonBlock ) %}
+<div class="row">
+<div class="col-sm-4">
+    <button type="button" class="btn btn-primary btn-block">Submit</button>
+    <button type="button" class="btn btn-default btn-block">Go back</button>
+</div>
+</div>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Disabled state", description=descriptions.buttonDisabled ) %}
+<button type="button" class="btn btn-primary" disabled>Call to action</button>
+<button type="button" class="btn btn-info" disabled>Learn more</button>
+<button type="button" class="btn btn-default" disabled>Go back</button>
+<button type="button" class="btn btn-danger" disabled>Delete</button>
+<button type="button" class="btn btn-link" disabled>Link</button>
+    {% endcall %}
+{% endblock %}

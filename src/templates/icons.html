@@ -1,0 +1,37 @@
+{% extends "layouts/base.nunj" %}
+
+{% import "macros/ui.nunj" as ui %}
+
+{% import "data/icons.nunj" as icons %}
+
+{% set descriptions = {
+    iconsFilled: 'The default option for each icon is the filled variant.',
+    iconsOutline: 'Add the class <code>icon-outline</code> to enable the outlined variant.'
+} %}
+
+{% block content %}
+    <h2>Icons</h2>
+    {% call ui.codeExample( title="Filled icons", description=descriptions.iconsFilled ) %}
+<span class="icon icon-arrow-up"></span>
+<span class="icon icon-plus"></span>
+<span class="icon icon-success"></span>
+<span class="icon icon-caution"></span>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Outlined icons", description=descriptions.iconsOutline ) %}
+<span class="icon icon-outline icon-arrow-up"></span>
+<span class="icon icon-outline icon-plus"></span>
+<span class="icon icon-outline icon-success"></span>
+<span class="icon icon-outline icon-caution"></span>
+    {% endcall %}
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Icon reference</h3>
+        </div>
+        <div class="panel-body">
+            <p>Use the class names below to implement icons, being sure to include the base <code>icon</code> optional <code>icon-outline</code> classes.</p>
+            {{ ui.iconExamples( icons.icons ) }}
+        </div>
+    </div>
+{% endblock %}

@@ -15,10 +15,10 @@ gulp.task( 'serve', function() {
 });
 
 // Watch for changes
-gulp.task( 'watch', function () {
+gulp.task( 'watch', [ 'default', 'serve' ], function () {
     gulp.watch( paths.scripts, [ 'scripts' ]);
     gulp.watch( paths.sassAll, [ 'styles' ]);
     gulp.watch( paths.templatesAll, [ 'pages' ]);    
 });
 
-gulp.task( 'default', [ 'pages', 'styles', 'scripts', 'serve', 'watch' ] );
+gulp.task( 'default', [ 'pages', 'styles', 'scripts' ] );

@@ -5,10 +5,11 @@
 
 <body class="{{ page.class }}">
 
-    {% include "partials/header.nunj" %}
+    {% include "partials/sidebar.nunj" %}
 
-    <main class="main">
-    {% block content %}{% endblock %}
+    <main class="main container-fluid">
+    {% block content %}
+    {% endblock %}
     </main>
 
     {% include "partials/footer.nunj" %}

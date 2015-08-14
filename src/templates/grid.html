@@ -1,0 +1,26 @@
+{% extends "layouts/base.nunj" %}
+
+{% import "macros/ui.nunj" as ui %}
+
+{% set descriptions = {
+    structure: ''
+} %}
+
+{% block content %}
+    <h2>Grid</h2>
+
+    {% call ui.codeExample( title='Basic structure', description=descriptions.structure ) -%}
+<div class="row">
+    <div class="col-xs-6">
+        <div class="gray-box">6 col</div>
+    </div>
+    <div class="col-xs-4">
+        <div class="gray-box">4 col</div>
+    </div>
+    <div class="col-xs-2">
+        <div class="gray-box">2 col</div>
+    </div>
+</div>
+    {%- endcall %}
+
+{% endblock %}

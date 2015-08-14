@@ -1,15 +1,66 @@
 @import "bootstrap-sass/assets/stylesheets/bootstrap";
 
-$logo-width: 231px;
-$logo-height: 50px;
+$sidebar-width : 200px;
+$logo-width    : 231px;
+$logo-height   : 50px;
 
-.brand-logo {
-    width: $logo-width;
-    height: $logo-height;
-    margin-top: $grid-gutter-width / 2;
-    margin-bottom: $grid-gutter-width / 2;
+// Sidebar
+// =======
+
+.sidebar {
+    background: $blue-alt;
+
+    @media (min-width: $screen-sm-min) {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: $sidebar-width;
+        overflow-y: auto;
+    }
+
+    .nav-list {
+        $nav-border: 1px solid $blue-alt-light;
+        @extend .list-unstyled;
+        
+        .nav-item {
+            border-bottom: $nav-border;
+            
+            &:first-child {
+                border-top: $nav-border;
+            }
+
+            a {
+                display: block;
+                color: #fff;
+                padding: $grid-gutter-width / 2;
+                transition: all .1s ease-in-out;
+                &:hover {
+                    background: $blue-alt-light;
+                    text-decoration: none;
+                }
+            }
+
+        }
+    }
 }
 
+
+// Main content
+// ============
+.main {
+    @media (min-width: $screen-sm-min) {
+        margin-left: $sidebar-width;
+    }
+}
+
+
+
+// 
+// Documentation
+// ----------------------------------------
+
+// Code examples
 .icon-example-list {
     @include make-row();
 }
@@ -41,5 +92,28 @@ $logo-height: 50px;
 
     &-inner {
         padding: $padding-base-vertical $padding-base-horizontal;
+    }
+}
+
+.gray-box {
+    padding: $padding-base-vertical $padding-base-horizontal;
+    border: 1px solid $gray-light;
+    background: $gray-lighter;
+    text-align: center;
+}
+
+// 
+// Page-specific styles
+// ----------------------------------------
+
+// Home page
+.home-hero {
+    position: relative;
+    top: 50%;
+    margin-top: $logo-height / 2;
+
+    .cofi-logo {
+        width: $logo-width;
+        height: $logo-height;
     }
 }

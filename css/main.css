@@ -872,7 +872,7 @@ hr {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: inherit;
-  font-weight: 600;
+  font-weight: 300;
   line-height: 1.1;
   color: inherit; }
   h1 small,
@@ -926,10 +926,10 @@ h6, .h6 {
     font-size: 75%; }
 
 h1, .h1 {
-  font-size: 32px; }
+  font-size: 48px; }
 
 h2, .h2 {
-  font-size: 28px; }
+  font-size: 36px; }
 
 h3, .h3 {
   font-size: 24px; }
@@ -1079,7 +1079,7 @@ ol {
   ol ol {
     margin-bottom: 0; }
 
-.list-unstyled {
+.list-unstyled, .sidebar .nav-list {
   padding-left: 0;
   list-style: none; }
 
@@ -5558,11 +5558,33 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
-.brand-logo {
-  width: 231px;
-  height: 50px;
-  margin-top: 15px;
-  margin-bottom: 15px; }
+.sidebar {
+  background: #018bbb; }
+  @media (min-width: 768px) {
+    .sidebar {
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      overflow-y: auto; } }
+  .sidebar .nav-list .nav-item {
+    border-bottom: 1px solid #019ED5; }
+    .sidebar .nav-list .nav-item:first-child {
+      border-top: 1px solid #019ED5; }
+    .sidebar .nav-list .nav-item a {
+      display: block;
+      color: #fff;
+      padding: 15px;
+      -webkit-transition: all 0.1s ease-in-out;
+              transition: all 0.1s ease-in-out; }
+      .sidebar .nav-list .nav-item a:hover {
+        background: #019ED5;
+        text-decoration: none; }
+
+@media (min-width: 768px) {
+  .main {
+    margin-left: 200px; } }
 
 .icon-example-list {
   margin-left: -15px;
@@ -5612,3 +5634,17 @@ button.close {
       clear: both; } }
   .icon-example-inner {
     padding: 8px 12px; }
+
+.gray-box {
+  padding: 8px 12px;
+  border: 1px solid #DCD8DB;
+  background: #F4F0F3;
+  text-align: center; }
+
+.home-hero {
+  position: relative;
+  top: 50%;
+  margin-top: 25px; }
+  .home-hero .cofi-logo {
+    width: 231px;
+    height: 50px; }
