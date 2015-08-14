@@ -42,8 +42,26 @@
 
     <main class="main container-fluid">
     
-    <h2>Grid</h2>
+    <h1>Grid</h1>
+    <hr>
+    <p class="lead">This grid provides the building blocks for a responsive application.  Below is an overview of the different parts of the grid and how they work together.</p>
+    <h3>Structure</h3>
+    <p>The grid consists of <b>containers</b>, <b>rows</b> and <b>columns</b>.
+        <ul>
+            <li><b>Containers</b> set the page margins and can contain one or more rows.</li>
+            <li><b>Rows</b> hold one or more columns.</li>
+            <li><b>Columns</b> are used create the layout of a page or component.</li>
+            
+        </ul>
+    </p>
+    <h3>Mobile First</h3>
+    <p>This grid system is mobile-first, which means that by default the layouts established for mobile will apply to all other screen sizes.  From there, you can specify column widths for the larger screen sizes, if desired.</p>
 
+    <h3>Fixed vs. fluid container</h3>
+    <p>The <code>container</code> class applies a fixed width per breakpoint to the container.  Use <code>container-fluid</code> to enable fluid containers.</p>
+
+    <h2>Code examples</h2>
+    <hr>
     
     <div class="panel panel-default">
         <div class="panel-heading">
@@ -51,31 +69,133 @@
         </div>
         <div class="panel-body">
             
-            <div class="row">
-    <div class="col-xs-6">
-        <div class="gray-box">6 col</div>
-    </div>
-    <div class="col-xs-4">
-        <div class="gray-box">4 col</div>
-    </div>
-    <div class="col-xs-2">
-        <div class="gray-box">2 col</div>
+            <div class="container-fluid">
+    <div class="row show-grid">
+        <div class="col-xs-2">2 col</div>
+        <div class="col-xs-4">4 col</div>
+        <div class="col-xs-6">6 col</div>
     </div>
 </div>
             
-            <pre style="margin-top: 10px;">&lt;div class=&quot;row&quot;&gt;
-    &lt;div class=&quot;col-xs-6&quot;&gt;
-        &lt;div class=&quot;gray-box&quot;&gt;6 col&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-xs-4&quot;&gt;
-        &lt;div class=&quot;gray-box&quot;&gt;4 col&lt;/div&gt;
-    &lt;/div&gt;
-    &lt;div class=&quot;col-xs-2&quot;&gt;
-        &lt;div class=&quot;gray-box&quot;&gt;2 col&lt;/div&gt;
+            <pre style="margin-top: 10px;">&lt;div class=&quot;container-fluid&quot;&gt;
+    &lt;div class=&quot;row show-grid&quot;&gt;
+        &lt;div class=&quot;col-xs-2&quot;&gt;2 col&lt;/div&gt;
+        &lt;div class=&quot;col-xs-4&quot;&gt;4 col&lt;/div&gt;
+        &lt;div class=&quot;col-xs-6&quot;&gt;6 col&lt;/div&gt;
     &lt;/div&gt;
 &lt;/div&gt;</pre>
         </div>
     </div>
+
+
+    
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Breakpoint-specific widths</h3>
+        </div>
+        <div class="panel-body">
+            
+            <p>Set specific widths for each breakpoint using <code>col-{screen-size}-{columns}</code>.</p>
+            <hr>
+            
+            <div class="row show-grid">
+    <div class="col-xs-10 col-sm-8 col-md-6 col-lg-4">xs-10, sm-8, md-6, lg-4</div>
+</div>
+            
+            <pre style="margin-top: 10px;">&lt;div class=&quot;row show-grid&quot;&gt;
+    &lt;div class=&quot;col-xs-10 col-sm-8 col-md-6 col-lg-4&quot;&gt;xs-10, sm-8, md-6, lg-4&lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+
+
+    
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Mobile first column sizes</h3>
+        </div>
+        <div class="panel-body">
+            
+            <p>The breakpoint-specific column widths you specify will carry over to larger sizes, unless you define different widths for each larger size.</p>
+            <hr>
+            
+            <div class="row show-grid">
+    <div class="col-xs-2">xs-2</div>
+</div>
+<div class="row show-grid">
+    <div class="col-sm-4">sm-4</div>
+</div>
+<div class="row show-grid">
+    <div class="col-md-6">md-6</div>
+</div>
+<div class="row show-grid">
+    <div class="col-lg-8">lg-8</div>
+</div>
+<div class="row show-grid">
+    <div class="col-xs-3 col-sm-6 col-md-9 col-lg-12">xs-3 sm-6 md-9 lg-12</div>
+</div>
+            
+            <pre style="margin-top: 10px;">&lt;div class=&quot;row show-grid&quot;&gt;
+    &lt;div class=&quot;col-xs-2&quot;&gt;xs-2&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row show-grid&quot;&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;sm-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row show-grid&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;md-6&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row show-grid&quot;&gt;
+    &lt;div class=&quot;col-lg-8&quot;&gt;lg-8&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row show-grid&quot;&gt;
+    &lt;div class=&quot;col-xs-3 col-sm-6 col-md-9 col-lg-12&quot;&gt;xs-3 sm-6 md-9 lg-12&lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+
+
+    
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">Column offsets</h3>
+        </div>
+        <div class="panel-body">
+            
+            <p>Offsets are handy for shifting or centering columns in your layouts.  Just like column widths themselves, offsets are specific to each breakpoint.</p>
+            <hr>
+            
+            <div class="row show-grid">
+    <div class="col-xs-3 col-xs-offset-1">xs-3 xs-offset-1</div>
+    <div class="col-xs-3 col-xs-offset-1">xs-3 xs-offset-1</div>        
+    <div class="col-xs-3 col-xs-offset-1">xs-3 xs-offset-1</div>        
+</div>
+<div class="row show-grid">
+    <div class="col-sm-4">sm-4</div>
+    <div class="col-sm-4 col-sm-offset-4">sm-4 sm-offset-4</div>
+</div>
+<div class="row show-grid">
+    <div class="col-md-6 col-md-offset-6">md-6 md-offset-6</div>
+</div>
+            
+            <pre style="margin-top: 10px;">&lt;div class=&quot;row show-grid&quot;&gt;
+    &lt;div class=&quot;col-xs-3 col-xs-offset-1&quot;&gt;xs-3 xs-offset-1&lt;/div&gt;
+    &lt;div class=&quot;col-xs-3 col-xs-offset-1&quot;&gt;xs-3 xs-offset-1&lt;/div&gt;        
+    &lt;div class=&quot;col-xs-3 col-xs-offset-1&quot;&gt;xs-3 xs-offset-1&lt;/div&gt;        
+&lt;/div&gt;
+&lt;div class=&quot;row show-grid&quot;&gt;
+    &lt;div class=&quot;col-sm-4&quot;&gt;sm-4&lt;/div&gt;
+    &lt;div class=&quot;col-sm-4 col-sm-offset-4&quot;&gt;sm-4 sm-offset-4&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row show-grid&quot;&gt;
+    &lt;div class=&quot;col-md-6 col-md-offset-6&quot;&gt;md-6 md-offset-6&lt;/div&gt;
+&lt;/div&gt;</pre>
+        </div>
+    </div>
+
+
+
+    <h3>Full documentation</h3>
+    <p>This grid is pretty awesome and full of features, so <a href="http://getbootstrap.com/css/#grid">check out the docs</a> to learn more after learning the basics.</p>
 
 
 

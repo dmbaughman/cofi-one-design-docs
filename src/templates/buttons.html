@@ -6,7 +6,7 @@
     buttonOptions: 'Each button style represents a different type of action.',
     buttonGhost: 'Some buttons offer outlined or "ghost" variants.',
     buttonSizes: 'Various button sizes are available for different applications.',
-    buttonBlock: 'A block level style is available to make buttons full-width within grid columns or other containers.',
+    buttonBlock: 'A block level style is available to make buttons full-width (useful within grid columns or other containers).',
     buttonDisabled: 'Disabled buttons are given a lighter background and are not selectable.'
 } %}
 
@@ -36,10 +36,10 @@
 
     {% call ui.codeExample( title="Block level", description=descriptions.buttonBlock ) %}
 <div class="row">
-<div class="col-sm-4">
-    <button type="button" class="btn btn-primary btn-block">Submit</button>
-    <button type="button" class="btn btn-default btn-block">Go back</button>
-</div>
+    <div class="col-sm-4">
+        <button type="button" class="btn btn-primary btn-block">Submit</button>
+        <button type="button" class="btn btn-default btn-block">Go back</button>
+    </div>
 </div>
     {% endcall %}
 

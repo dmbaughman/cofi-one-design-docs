@@ -95,11 +95,17 @@ $logo-height   : 50px;
     }
 }
 
-.gray-box {
-    padding: $padding-base-vertical $padding-base-horizontal;
-    border: 1px solid $gray-light;
-    background: $gray-lighter;
-    text-align: center;
+.show-grid {
+    & + & {
+        margin-top: $grid-gutter-width / 2;
+    }
+
+    > [class^="col-"] {
+        padding: $padding-base-vertical $padding-base-horizontal;
+        border: 1px solid $blue-alt-lighter;
+        background: $blue-alt-lightest;
+        text-align: center;
+    }
 }
 
 // 
