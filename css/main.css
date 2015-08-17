@@ -5638,7 +5638,7 @@ button.close {
 .show-grid + .show-grid {
   margin-top: 15px; }
 
-.show-grid > [class^="col-"] {
+.show-grid [class^="col-"] {
   padding: 8px 12px;
   border: 1px solid #97D6ED;
   background: #E2F4FE;

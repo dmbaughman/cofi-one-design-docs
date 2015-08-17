@@ -100,7 +100,7 @@ $logo-height   : 50px;
         margin-top: $grid-gutter-width / 2;
     }
 
-    > [class^="col-"] {
+    [class^="col-"] {
         padding: $padding-base-vertical $padding-base-horizontal;
         border: 1px solid $blue-alt-lighter;
         background: $blue-alt-lightest;
