@@ -1,4 +1,5 @@
-@import "bootstrap-sass/assets/stylesheets/bootstrap";
+@import "ui-framework/scss/main";
+// @import "bootstrap-sass/assets/stylesheets/bootstrap";
 
 $sidebar-width : 200px;
 $logo-width    : 231px;
@@ -10,13 +11,13 @@ $logo-height   : 50px;
 .sidebar {
     background: $blue-alt;
 
-    @media (min-width: $screen-sm-min) {
+    @include media-breakpoint-up(sm) {
         position: fixed;
         top: 0;
         bottom: 0;
         left: 0;
         width: $sidebar-width;
-        overflow-y: auto;
+        overflow-y: auto;        
     }
 
     .nav-list {
@@ -49,7 +50,7 @@ $logo-height   : 50px;
 // Main content
 // ============
 .main {
-    @media (min-width: $screen-sm-min) {
+    @include media-breakpoint-up(sm) {
         margin-left: $sidebar-width;
     }
 }
@@ -61,14 +62,25 @@ $logo-height   : 50px;
 // ----------------------------------------
 
 // Code examples
-.icon-example-list {
-    @include make-row();
+.example {
+
+    &-compiled,
+    &-code {
+        padding: $spacer;
+        border: $border-width solid $gray-lighter;
+    }
+
+    &-compiled {
+    }
+
+    &-code {
+        background: $gray-lighter;
+    }
+
 }
 
+
 .icon-example {
-    @include make-xs-column(12);
-    @include make-sm-column(4);
-    @include make-md-column(3);
     border: 1px solid #fff;
     background: $gray-lighter;
     transition: all .1s ease-in-out;
@@ -78,20 +90,20 @@ $logo-height   : 50px;
         color: #fff;
     }
     
-    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    @include media-breakpoint-only(sm) {
         &:nth-child(3n + 1) {
             clear: both;
         }
     }
     
-    @media (min-width: $screen-md-min) {
+    @include media-breakpoint-up(md) {
         &:nth-child(4n + 1) {
             clear: both;
         }
     }
 
     &-inner {
-        padding: $padding-base-vertical $padding-base-horizontal;
+        padding: ($spacer / 2)  ($spacer / 2);
     }
 }
 
@@ -101,7 +113,7 @@ $logo-height   : 50px;
     }
 
     [class^="col-"] {
-        padding: $padding-base-vertical $padding-base-horizontal;
+        padding: ($spacer / 2)  ($spacer / 2);
         border: 1px solid $blue-alt-lighter;
         background: $blue-alt-lightest;
         text-align: center;
@@ -114,12 +126,10 @@ $logo-height   : 50px;
 
 // Home page
 .home-hero {
-    position: relative;
-    top: 50%;
-    margin-top: $logo-height / 2;
+    margin-top: $spacer;
+}
 
-    .cofi-logo {
-        width: $logo-width;
-        height: $logo-height;
-    }
+.cofi-logo {
+    width: $logo-width;
+    height: $logo-height;
 }

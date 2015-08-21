@@ -29,7 +29,6 @@
     <h3>Fixed vs. fluid container</h3>
     <p>The <code>container</code> class applies a fixed width per breakpoint to the container.  Use <code>container-fluid</code> to enable fluid containers.</p>
 
-    <h2>Code examples</h2>
     <hr>
     {% call ui.codeExample( title='Basic structure', description=descriptions.structure ) -%}
 <div class="container-fluid">
@@ -86,21 +85,6 @@
 </div>
     {%- endcall %}
 
-    {% call ui.codeExample( title='Nesting', description=descriptions.nesting ) -%}
-<div class="container-fluid">
-    <div class="row show-grid">
-        <div class="col-xs-4">outer column</div>
-        <div class="col-xs-8">
-            outer column
-            <div class="row show-grid">
-                <div class="col-xs-4">nested column</div>
-                <div class="col-xs-4">nested column</div>
-                <div class="col-xs-4">nested column</div>
-            </div>
-        </div>        
-    </div>
-</div>
-    {%- endcall %}
 
     <h3>Full documentation</h3>
     <p>This grid is pretty awesome and full of cool features, so check out the <a href="http://getbootstrap.com/css/#grid">Bootstrap docs</a> to learn more after you've become comfortable with the basics.</p>

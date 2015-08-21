@@ -1,24 +1,18 @@
 {% macro codeExample( title, description='' ) %}
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">{{ title }}</h3>
-        </div>
-        <div class="panel-body">
-            {% if description %}
-            <p>{{ description }}</p>
-            <hr>
-            {% endif %}
-            {{ caller() }}
-            {# @TODO: Replace this inline style #}
-            <pre style="margin-top: 10px;">{{ caller() | escape }}</pre>
-        </div>
+    <h2>{{ title }}</h2>
+    {% if description %}
+    <p>{{ description }}</p>
+    {% endif %}
+    <div class="example-compiled">
+        {{ caller() }}
     </div>
+    <pre class="example-code">{{ caller() | escape }}</pre>
 {% endmacro %}
 
 {% macro iconExamples( icons ) %}
-    <ul class="icons-example-list list-inline">
+    <ul class="icons-example-list list-inline row">
         {% for icon in icons -%}
-        <li class="icon-example">
+        <li class="icon-example col-sm-4 col-md-3">
             <div class="icon-example-inner">
                 <div class="row">
                     <div class="col-xs-3">

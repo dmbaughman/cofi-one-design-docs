@@ -1,65 +1,109 @@
-{% extends "layouts/base.nunj" %}
+h1{% extends "layouts/base.nunj" %}
 
 {% import "macros/ui.nunj" as ui %}
 
 {% set descriptions = {
     formBasic: 'Basic forms include input fields with a label for each field and a submit button.',
-    formInline: 'Inline forms are handy when you want the user to navigate the fields from left-to-right.',
-    formHorizontal: 'Horizontal forms take advantage of wide areas by placing labels to the left of their corresponding input fields.',
-    formStates: ''
+    inputTypes: 'Use input types to add semantic clarity and present mobile users with phone-friendly input options.  For example, <code>tel</code> gives mobile users a phone-style keyboard, <code>password</code> masks the entered characters, and <code>search</code> changes the submit button from \'go\' to \'search\'.',
+    controlOptions: ''
 } %}
 
 {% block content %}
-    <h2>Forms</h2>
+    <h1>Forms</h1>
+    <hr>
 
     {% call ui.codeExample( title="Basic form", description=descriptions.formBasic ) %}
 <form>
-<div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-</div>
-<div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-</div>
-<button type="submit" class="btn btn-primary">Submit</button>
+    <div class="form-group">
+        <label for="exampleInputEmail1">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+    </div>
+    <div class="form-group">
+        <label for="exampleInputPassword1">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
 </form>
     {% endcall %}
 
-    {% call ui.codeExample( title="Inline form", description=descriptions.formInline ) %}
-<form class="form-inline">
+    {% call ui.codeExample( title="Input types", description=descriptions.inputTypes ) %}
 <div class="form-group">
-    <label for="exampleInputName2">Name</label>
-    <input type="text" class="form-control" id="exampleInputName2" placeholder="Jane Doe">
+    <input type="text" class="form-control" placeholder="Text">
 </div>
 <div class="form-group">
-    <label for="exampleInputEmail2">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="jane.doe@example.com">
+    <input type="email" class="form-control" placeholder="Email">
 </div>
-<button type="submit" class="btn btn-primary">Sign up</button>
-</form>
+<div class="form-group">
+    <input type="tel" class="form-control" placeholder="Phone">
+</div>
+<div class="form-group">
+    <input type="password" class="form-control" placeholder="Password">
+</div>
+<div class="form-group">
+    <input type="search" class="form-control" placeholder="Search">
+</div>
+<div class="form-group">
+    <input type="url" class="form-control" placeholder="URL">
+</div>
     {% endcall %}
 
-    {% call ui.codeExample( title="Horizontal form", description=descriptions.formHorizontal ) %}
-<form class="form-horizontal">
+    {% call ui.codeExample( title="Control options", description=descriptions.controlOptions ) %}
 <div class="form-group">
-    <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
-    <div class="col-sm-10">
-        <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-    </div>
+    <select class="form-control" placeholder="Select...">
+        <option value="">Select...</option>
+        <optgroup label="States">
+            <option value="AL">Alabama</option>
+            <option value="AK">Alaska</option>
+            <option value="AZ">Arizona</option>
+            <option value="AR">Arkansas</option>
+        </optgroup>
+        <optgroup label="Provinces">
+            <option value="AB">Alberta</option>
+            <option value="BC">British Columbia</option>
+            <option value="MB">Manitoba</option>
+            <option value="NB">New Brunswick</option>
+        </optgroup>
+    </select>
 </div>
+
 <div class="form-group">
-    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
-    <div class="col-sm-10">
-        <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
-    </div>
+    <textarea class="form-control" placeholder="Enter your long answer here..."></textarea>
 </div>
-<div class="form-group">
-    <div class="col-sm-offset-2 col-sm-10">
-        <button type="submit" class="btn btn-primary">Sign in</button>
-    </div>
+
+<div class="checkbox">
+    <label>
+        <input type="checkbox" value="">
+        Option one is this and that&mdash;be sure to include why it's great
+    </label>
 </div>
-</form>
+<div class="checkbox disabled">
+    <label>
+        <input type="checkbox" value="" disabled>
+        Option two is disabled
+    </label>
+</div>
+
+<div class="radio">
+    <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+        Option one is this and that&mdash;be sure to include why it's great
+    </label>
+</div>
+<div class="radio">
+    <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+        Option two can be something else and selecting it will deselect option one
+    </label>
+</div>
+<div class="radio disabled">
+    <label>
+        <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
+        Option three is disabled
+    </label>
+</div>
     {% endcall %}
+
+
+
 
 {% endblock %}
