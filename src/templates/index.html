@@ -1,8 +1,30 @@
 {% extends "layouts/base.nunj" %}
 
 {% block content %}
-    <div class="home-hero">
-        <h1>UI Framework</h1>
-        <h2>Patterns and styles for the web</h2>
-    </div>
+    <h1>One Design Framework</h1>
+    <hr>
+    <h2 class="blue-alt">One Design</h2>
+    <p>This framework implements the styles from the <a href="http://onedesign.kdc.capitalone.com/visual-language/">One Design Visual Language</a> for use with Capital One Investing web properties.  It also includes other styles and components that are useful for modern web applications.</p>
+    <p>This site is intended to provide developers with the resources they need to build web pages using this framework.  This guide covers everything from One Design (as of October 1st, 2015) as well as some additional patterns that are used throughout the <a href="https://www.capitaloneinvesting.com">Capital One Investing</a> marketing pages.</p>
+    
+    <h2 class="blue-alt">Built with Bootstrap</h2>
+    <p>Bootstrap is by far the most commonly used CSS framework in the world, and with that popularity comes a wealth of shared knowledge and open source community resources.  This framework applies the One Design styles to Bootstrap using its core variables pre-compilation, so the number of override styles necessary are limited.</p>
+    
+    <h2 class="blue-alt">Usage options</h2>
+    <p>This framework can be used as a <strong>pre-compiled bundle</strong> or pre-compilation using <strong>select scss modules</strong>.  
+    <h3>Using pre-compiled CSS</h3>
+    <ul>
+        <li><code>one-design-core.css</code> only includes styles found in this style guide.</li>
+        <li><code>one-design.css</code> includes everything from the core file, plus everything else that comes with Bootstrap.</li>
+    </ul>
+    <h3>Using with SCSS</h3>
+    <p>To use with SCSS, simply import the partials you need into your project file.  Refer to <code>one-design-core.scss</code> as an example of how to do this correctly</p>
+    <p>Here are a few tips on working with these partials:</p>
+    <ul>
+        <li>Always include variables, mixins, normalize, and scaffolding files from Bootstrap</li>
+        <li>If importing multiple partials, maintain the same order found in <code>_bootstrap.scss</code> or <code>one-design-core.scss</code></li>
+        <li>Use the custom version of <code>_variables.scss</code> and import it before anything else</li>
+        <li>Where applicable, include both the Bootstrap</li>
+    </ul>
+    
 {% endblock %}

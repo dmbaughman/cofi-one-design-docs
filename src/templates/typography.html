@@ -5,7 +5,9 @@
 {% set descriptions = {
     headings: 'Use headings to visually indicate the hierarchy of page sections',
     bodyCopy: 'Body copy should be used to communicate detailed information to users.',
-    leadCopy: 'Lead copy is useful for subheadings or to call attention to important high-level information.'
+    leadCopy: 'Lead copy is useful for subheadings or to call attention to important high-level information.',
+    fontWeights: 'Use these font weight classes to change font weights on the fly.  Choose from light, regular, and semibold to override standard font weights',
+    textColors: 'These color classes allow you to easily change the color of textual elements.  Apply them to a parent element to change the color of children text elements.'
 } %}
 
 {% block content %}
@@ -27,6 +29,27 @@
 
     {% call ui.codeExample( title='Lead copy', description=descriptions.leadCopy ) -%}
 <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.  Etiam pellentesque mollis metus, eget suscipit metus.</p>
+    {%- endcall %}
+
+    {% call ui.codeExample( title='Font weights', description=descriptions.fontWeights ) -%}
+<p class="light">Light and breezy.</p>
+<p class="regular">Just plain old regular.</p>
+<p class="semibold">Semibold is less intimidating than bold.</p>
+    {%- endcall %}
+
+    {% call ui.codeExample( title='Text colors', description=descriptions.textColors ) -%}
+<p class="blue">Here's some <b>blue</b> text.</p>
+<p class="red">Want <b>red</b>?  We've got that too.</p>
+<p class="blue-alt"><b>Blue-alt</b> is probably my favorite.</p>
+<p class="green"><b>Green</b> is another word for success!</p>
+<p class="yellow"><b>Yellow</b> should only be used on a dark background.</p>
+<p>
+    Works for icons, too!
+    <i class="icon icon-success green"></i>
+    <i class="icon icon-info blue-alt"></i>    
+    <i class="icon icon-caution yellow"></i>
+    <i class="icon icon-close red"></i>
+</p>
     {%- endcall %}
 
 {% endblock %}

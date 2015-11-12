@@ -2,15 +2,15 @@ $icon-font-path: '../fonts/';
 @import "cofi-one-design/scss/one-design.scss";
 
 $sidebar-width : 200px;
-$logo-width    : 231px;
-$logo-height   : 50px;
+$logo-width    : 200px;
+$logo-height   : 70px;
 $spacer        : $font-size-base;
 
 // Sidebar
 // =======
 
 .sidebar {
-    background: $blue-alt;
+    background: $charcoal;
 
     @media ( min-width: $screen-sm-min) {
         position: fixed;
@@ -22,7 +22,7 @@ $spacer        : $font-size-base;
     }
 
     .nav-list {
-        $nav-border: 1px solid $blue-alt-light;
+        $nav-border: 1px solid lighten($charcoal, 5%);
         @extend .list-unstyled;
         
         .nav-item {
@@ -38,7 +38,7 @@ $spacer        : $font-size-base;
                 padding: $grid-gutter-width / 2;
                 transition: all .1s ease-in-out;
                 &:hover {
-                    background: $blue-alt-light;
+                    background: $charcoal-light;
                     text-decoration: none;
                 }
             }

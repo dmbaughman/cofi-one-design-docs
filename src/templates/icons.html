@@ -6,7 +6,8 @@
 
 {% set descriptions = {
     iconsFilled: 'The default option for each icon is the filled variant.',
-    iconsOutline: 'Add the class <code>icon-outline</code> to enable the outlined variant.'
+    iconsOutline: 'Add the class <code>icon-outline</code> to enable the outlined variant.',
+    iconsColored: 'Since these icons use an icon font, apply the <code>color</code> CSS property to change an icons\'s color.  You can also use color classes from the <a href="typography.html">Typography section</a> to change an icon\'s color in a pinch.'
 } %}
 
 {% block content %}
@@ -25,6 +26,13 @@
 <span class="icon icon-outline icon-plus"></span>
 <span class="icon icon-outline icon-success"></span>
 <span class="icon icon-outline icon-caution"></span>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Colored icons", description=descriptions.iconsColored ) %}
+<i class="icon icon-success green"></i>
+<i class="icon icon-info blue-alt"></i>
+<i class="icon icon-caution yellow"></i>
+<i class="icon icon-close red"></i>
     {% endcall %}
 
     <div class="panel panel-default">

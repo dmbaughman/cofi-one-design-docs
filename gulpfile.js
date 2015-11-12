@@ -21,4 +21,4 @@ gulp.task( 'watch', [ 'default', 'serve' ], function () {
     gulp.watch( paths.templatesAll, [ 'pages' ]);    
 });
 
-gulp.task( 'default', [ 'pages', 'styles', 'scripts', 'fonts' ] );
+gulp.task( 'default', [ 'pages', 'styles', 'scripts', 'fonts', 'images' ] );

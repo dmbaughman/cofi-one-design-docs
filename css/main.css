@@ -6791,17 +6791,33 @@ ul {
 .container {
   max-width: 992px; }
 
+.form-control {
+  -webkit-transition: border-color 0.15s ease-in-out;
+  transition: border-color 0.15s ease-in-out;
+  border-width: 2px; }
+  .form-control,
+  .form-control:focus {
+    box-shadow: none; }
+
+.help-block {
+  color: #687680; }
+
+.btn {
+  border-width: 2px;
+  -webkit-transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out; }
+
 .btn-outline,
 .btn-outline:hover,
 .btn-outline:focus,
 .btn-outline:active {
   background-color: transparent; }
 
-.btn-outline.btn-secondary {
+.btn-outline.btn-default {
   color: #687680; }
-  .btn-outline.btn-secondary:hover,
-  .btn-outline.btn-secondary:focus,
-  .btn-outline.btn-secondary:active {
+  .btn-outline.btn-default:hover,
+  .btn-outline.btn-default:focus,
+  .btn-outline.btn-default:active {
     color: #515c64; }
 
 .btn-outline.btn-info {
@@ -6834,7 +6850,7 @@ ul {
 .padding-large-all {
   padding: 30px; }
 
-.padding-large-vertical, .marquee {
+.padding-large-vertical {
   padding-top: 30px;
   padding-bottom: 30px; }
 
@@ -6844,10 +6860,6 @@ ul {
 
 .margin-none {
   margin: 0; }
-
-@media (min-width: 992px) {
-  .marquee .jumbo {
-    font-size: 64px; } }
 
 .table-bonus-vertical, .table-bonus-horizontal, .table-comparison-horizontal, .table-comparison-vertical {
   margin-bottom: 0;
@@ -6970,7 +6982,7 @@ ul {
   border-top: none; }
 
 .sidebar {
-  background: #018bbb; }
+  background: #273B49; }
   @media (min-width: 768px) {
     .sidebar {
       position: fixed;
@@ -6980,9 +6992,9 @@ ul {
       width: 200px;
       overflow-y: auto; } }
   .sidebar .nav-list .nav-item {
-    border-bottom: 1px solid #019ED5; }
+    border-bottom: 1px solid #30485a; }
     .sidebar .nav-list .nav-item:first-child {
-      border-top: 1px solid #019ED5; }
+      border-top: 1px solid #30485a; }
     .sidebar .nav-list .nav-item a {
       display: block;
       color: #fff;
@@ -6990,7 +7002,7 @@ ul {
       -webkit-transition: all 0.1s ease-in-out;
               transition: all 0.1s ease-in-out; }
       .sidebar .nav-list .nav-item a:hover {
-        background: #019ED5;
+        background: #687680;
         text-decoration: none; }
 
 @media (min-width: 768px) {
@@ -7035,5 +7047,5 @@ ul {
   margin-top: 16px; }
 
 .cofi-logo {
-  width: 231px;
-  height: 50px; }
+  width: 200px;
+  height: 70px; }
