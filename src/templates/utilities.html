@@ -1,0 +1,25 @@
+{% extends "layouts/base.nunj" %}
+
+{% import "macros/ui.nunj" as ui %}
+
+{% set descriptions = {
+    padding: 'Add padding on the fly using one of the padding classes.  You can apply padding to the top/bottom, sides or both.  There are large padding versions, too.'
+} %}
+
+{% block content %}
+    <h1>Utilities</h1>
+    <hr>    
+    {% call ui.codeExample( title="Padding", description=descriptions.padding ) %}
+<p class="bg-gray-light padding-all">Padding on all sides</p>
+<p class="bg-gray-light padding-vertical">Padding on top and bottom</p>
+<p class="bg-gray-light padding-horizontal">Padding on sides only</p>
+
+<p class="bg-gray-light padding-large-all">Large padding on all sides</p>
+<p class="bg-gray-light padding-large-vertical">Large padding on top and bottom</p>
+<p class="bg-gray-light padding-large-horizontal">Large padding on sides only</p>
+    {% endcall %}
+
+    <p class="bg-blue-alt-lightest padding-all"><strong>FYI</strong>:  These padding classes are based on the <code>$grid-gutter-width</code> variable to make element padding consistent with the grid gutters.</p>
+
+
+{% endblock %}
