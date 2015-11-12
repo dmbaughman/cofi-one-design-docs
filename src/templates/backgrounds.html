@@ -1,0 +1,219 @@
+{% extends "layouts/base.nunj" %}
+
+{% import "macros/ui.nunj" as ui %}
+
+{% set descriptions = {
+    bgWhite: 'The white background is useful for elements that need a white background inside a container with a different background color.'
+} %}
+
+{% block content %}
+    <h1>Backgrounds</h1>
+    <hr>
+
+    <p class="lead">These background classes are useful for page mastheads or other colored blocks throughout the page.  The text and link colors are configured to be light or dark, depending on the background.</p>
+    <p class="bg-blue-alt-lightest padding-all"><strong>Pro tip:</strong> Be sure to use a <code>.container</code> class inside the <code>.bg-{color-name}</code> if you want the backround color to span the width of the page, but still have the text constrained to the container.  Most of the examples below demonstrate this usage.</p>
+
+    {% call ui.codeExample( title="Charcoal dark" ) %}
+<section class="bg-charcoal-dark">
+    <div class="container">
+        <h1>Superbly awesome</h1>
+        <p class="lead">Business, business, business.  Numbers, charts, graphs.</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="#0">Get started</a>
+            <a class="btn btn-info btn-lg" href="#0">Learn more</a>
+        </p>
+    </div>
+</section>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Charcoal" ) %}
+<section class="bg-charcoal">
+    <div class="container">
+        <h1>Superbly awesome</h1>
+        <p class="lead">Business, business, business.  Numbers, charts, graphs.</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="#0">Get started</a>
+            <a class="btn btn-info btn-lg" href="#0">Learn more</a>
+        </p>
+    </div>
+</section>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Charcoal light" ) %}
+<section class="bg-charcoal-light">
+    <div class="container">
+        <h1>Superbly awesome</h1>
+        <p class="lead">Business, business, business.  Numbers, charts, graphs.</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="#0">Get started</a>
+            <a class="btn btn-info btn-lg" href="#0">Learn more</a>
+        </p>
+    </div>
+</section>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Brand blue dark" ) %}
+<section class="bg-brand-blue-dark">
+    <div class="container">
+        <h1>Superbly awesome</h1>
+        <p class="lead">Business, business, business.  Numbers, charts, graphs.</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="#0">Get started</a>
+            <a class="btn btn-info btn-lg" href="#0">Learn more</a>
+        </p>
+    </div>
+</section>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Brand blue" ) %}
+<section class="bg-brand-blue">
+    <div class="container">
+        <h1>Superbly awesome</h1>
+        <p class="lead">Business, business, business.  Numbers, charts, graphs.</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="#0">Get started</a>
+            <a class="btn btn-info btn-lg" href="#0">Learn more</a>
+        </p>
+    </div>
+</section>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Brand blue light" ) %}
+<section class="bg-brand-blue-light">
+    <div class="container">
+        <h1>Superbly awesome</h1>
+        <p class="lead">Business, business, business.  Numbers, charts, graphs.</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="#0">Get started</a>
+            <a class="btn btn-info btn-lg" href="#0">Learn more</a>
+        </p>
+    </div>
+</section>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Blue alt" ) %}
+<section class="bg-blue-alt">
+    <div class="container">
+        <h1>Superbly awesome</h1>
+        <p class="lead">Business, business, business.  Numbers, charts, graphs.</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="#0">Get started</a>
+            <a class="btn btn-default btn-lg" href="#0">Learn more</a>
+        </p>
+    </div>
+</section>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Blue alt light" ) %}
+<section class="bg-blue-alt-light">
+    <div class="container">
+        <h1>Superbly awesome</h1>
+        <p class="lead">Business, business, business.  Numbers, charts, graphs.</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="#0">Get started</a>
+            <a class="btn btn-default btn-lg" href="#0">Learn more</a>
+        </p>
+    </div>
+</section>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Blue alt lighter" ) %}
+<section class="bg-blue-alt-lighter">
+    <div class="container">
+        <h1>Superbly awesome</h1>
+        <p class="lead">Business, business, business.  Numbers, charts, graphs.</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="#0">Get started</a>
+            <a class="btn btn-default btn-lg" href="#0">Learn more</a>
+        </p>
+    </div>
+</section>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Blue alt lightest" ) %}
+<section class="bg-blue-alt-lightest">
+    <div class="container">
+        <h1>Superbly awesome</h1>
+        <p class="lead">Business, business, business.  Numbers, charts, graphs.</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="#0">Get started</a>
+            <a class="btn btn-default btn-lg" href="#0">Learn more</a>
+        </p>
+    </div>
+</section>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Green" ) %}
+<section class="bg-green">
+    <div class="container">
+        <h1>Superbly awesome</h1>
+        <p class="lead">Business, business, business.  Numbers, charts, graphs.</p>
+        <p>
+            <a class="btn btn-default btn-lg" href="#0">Get started</a>
+            <a class="btn btn-info btn-lg" href="#0">Learn more</a>
+        </p>
+    </div>
+</section>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Gray light" ) %}
+<section class="bg-gray-light">
+    <div class="container">
+        <h1>Superbly awesome</h1>
+        <p class="lead">Business, business, business.  Numbers, charts, graphs.</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="#0">Get started</a>
+            <a class="btn btn-info btn-lg" href="#0">Learn more</a>
+        </p>
+    </div>
+</section>
+    {% endcall %}
+
+    {% call ui.codeExample( title="Gray lighter" ) %}
+<section class="bg-gray-lighter">
+    <div class="container">
+        <h1>Superbly awesome</h1>
+        <p class="lead">Business, business, business.  Numbers, charts, graphs.</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="#0">Get started</a>
+            <a class="btn btn-info btn-lg" href="#0">Learn more</a>
+        </p>
+    </div>
+</section>
+    {% endcall %}
+
+
+    {% call ui.codeExample( title="Gray lightest" ) %}
+<section class="bg-gray-lightest">
+    <div class="container">
+        <h1>Superbly awesome</h1>
+        <p class="lead">Business, business, business.  Numbers, charts, graphs.</p>
+        <p>
+            <a class="btn btn-primary btn-lg" href="#0">Get started</a>
+            <a class="btn btn-info btn-lg" href="#0">Learn more</a>
+        </p>
+    </div>
+</section>
+    {% endcall %}
+
+    {% call ui.codeExample( title="White", description=descriptions.bgWhite ) %}
+<section class="bg-gray-light padding-vertical">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3">
+                <div class="bg-white padding-all">
+                    <h1>Superbly awesome</h1>
+                    <p class="lead">Business, business, business.  Numbers, charts, graphs.</p>
+                    <p>
+                        <a class="btn btn-primary btn-lg" href="#0">Get started</a>
+                        <a class="btn btn-info btn-lg" href="#0">Learn more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    {% endcall %}
+
+
+{% endblock %}
