@@ -13,8 +13,7 @@
   "author": "David Baughman <david.baughman@capitalone.com>",
   "license": "ISC",
   "dependencies": {
-    "bootstrap-sass": "git+https://github.kdc.capitalone.com/cofi-brand-marketing/bootstrap-sass.git",
-    "ui-framework": "git+https://github.kdc.capitalone.com/cofi-brand-marketing/ui-framework.git"
+    "cofi-one-design": "git+https://github.kdc.capitalone.com/cofi-brand-marketing/cofi-one-design.git"
   },
   "devDependencies": {
     "browserify": "^11.0.1",

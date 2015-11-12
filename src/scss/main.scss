@@ -1,9 +1,10 @@
-@import "ui-framework/scss/main";
-// @import "bootstrap-sass/assets/stylesheets/bootstrap";
+$icon-font-path: '../fonts/';
+@import "cofi-one-design/scss/one-design.scss";
 
 $sidebar-width : 200px;
 $logo-width    : 231px;
 $logo-height   : 50px;
+$spacer        : $font-size-base;
 
 // Sidebar
 // =======
@@ -11,7 +12,7 @@ $logo-height   : 50px;
 .sidebar {
     background: $blue-alt;
 
-    @include media-breakpoint-up(sm) {
+    @media ( min-width: $screen-sm-min) {
         position: fixed;
         top: 0;
         bottom: 0;
@@ -50,7 +51,7 @@ $logo-height   : 50px;
 // Main content
 // ============
 .main {
-    @include media-breakpoint-up(sm) {
+    @media ( min-width: $screen-sm-min) {
         margin-left: $sidebar-width;
     }
 }
@@ -67,7 +68,7 @@ $logo-height   : 50px;
     &-compiled,
     &-code {
         padding: $spacer;
-        border: $border-width solid $gray-lighter;
+        border: $border-width-base solid $gray-lighter;
     }
 
     &-compiled {
@@ -90,13 +91,13 @@ $logo-height   : 50px;
         color: #fff;
     }
     
-    @include media-breakpoint-only(sm) {
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
         &:nth-child(3n + 1) {
             clear: both;
         }
     }
     
-    @include media-breakpoint-up(md) {
+    @media (min-width: $screen-md-min) {
         &:nth-child(4n + 1) {
             clear: both;
         }

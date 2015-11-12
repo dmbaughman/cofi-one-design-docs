@@ -13,6 +13,7 @@
     </main>
 
     {% include "partials/footer.nunj" %}
+    {% include "partials/scripts.nunj" %}
 
 </body>
 
