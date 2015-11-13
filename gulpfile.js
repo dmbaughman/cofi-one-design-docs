@@ -7,7 +7,7 @@ var tasks       = requireDir( './gulp/tasks' );
 var connect     = require( 'gulp-connect' );
 
 // Run server with livereload
-gulp.task( 'serve', function() {
+gulp.task( 'serve', [ 'watch' ], function() {
     connect.server({
         root: [__dirname],
         livereload: true
@@ -15,7 +15,7 @@ gulp.task( 'serve', function() {
 });
 
 // Watch for changes
-gulp.task( 'watch', [ 'default', 'serve' ], function () {
+gulp.task( 'watch', [ 'default' ], function () {
     gulp.watch( paths.scripts, [ 'scripts' ]);
     gulp.watch( paths.sassAll, [ 'styles' ]);
     gulp.watch( paths.templatesAll, [ 'pages' ]);    

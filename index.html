@@ -54,8 +54,10 @@
     <p>This framework implements the styles from the <a href="http://onedesign.kdc.capitalone.com/visual-language/">One Design Visual Language</a> for use with Capital One Investing web properties.  It also includes other styles and components that are useful for modern web applications.</p>
     <p>This site is intended to provide developers with the resources they need to build web pages using this framework.  This guide covers everything from One Design (as of October 1st, 2015) as well as some additional patterns that are used throughout the <a href="https://www.capitaloneinvesting.com">Capital One Investing</a> marketing pages.</p>
     
-    <h2 class="blue-alt">Built with Bootstrap</h2>
+    <h2 class="blue-alt">Built with Bootstrap (v3.3.5)</h2>
     <p>Bootstrap is by far the most commonly used CSS framework in the world, and with that popularity comes a wealth of shared knowledge and open source community resources.  This framework applies the One Design styles to Bootstrap using its core variables pre-compilation, so the number of override styles necessary are limited.</p>
+    <p>If you haven't already done so, take some time to read through the <a href="http://getbootstrap.com/">Bootstrap Documentation</a> to see what else you can do with this feature-rich framework.</p>
+    <p class="bg-blue-alt-lightest"><strong>Pro tip:</strong> Bootstrap 4 is coming soon, so if the link above doesn't work, try using this <a href="http://getbootstrap.com/3.3.5">archive url</a>.</p>
     
     <h2 class="blue-alt">Usage options</h2>
     <p>This framework can be used as a <strong>pre-compiled bundle</strong> or pre-compilation using <strong>select scss modules</strong>.  
@@ -71,7 +73,7 @@
         <li>Always include variables, mixins, normalize, and scaffolding files from Bootstrap</li>
         <li>If importing multiple partials, maintain the same order found in <code>_bootstrap.scss</code> or <code>one-design-core.scss</code></li>
         <li>Use the custom version of <code>_variables.scss</code> and import it before anything else</li>
-        <li>Where applicable, include both the Bootstrap</li>
+        <li>Where applicable, include both the Bootstrap and custom version of each file (e.g. <code>_buttons.scss</code>) so the Bootstrap styles and our overrides get compiled together</li>
     </ul>
     
 
