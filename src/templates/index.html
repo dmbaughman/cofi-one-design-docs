@@ -1,7 +1,7 @@
 {% extends "layouts/base.nunj" %}
 
 {% block content %}
-    <h1>COFI One Design CSS Framework</h1>
+    <h1>COFI One Design CSS Framework v1.0.2</h1>
     <hr>
     <h2 class="blue-alt">One Design</h2>
     <p>This framework implements the styles from the <a href="http://onedesign.kdc.capitalone.com/visual-language/">One Design Visual Language</a> for use with Capital One Investing web properties.  It also includes other styles and components that are useful for modern web applications.</p>
@@ -14,12 +14,15 @@
     
     <h2 class="blue-alt">Usage options</h2>
     <p>This framework can be used as a <strong>pre-compiled bundle</strong> or pre-compilation using <strong>select scss modules</strong>.  
-    <h3>Using pre-compiled CSS</h3>
+    <h3 class="regular">Using pre-compiled CSS</h3>
     <ul>
-        <li><code>one-design-core.css</code> only includes styles found in this style guide.</li>
-        <li><code>one-design.css</code> includes everything from the core file, plus everything else that comes with Bootstrap.</li>
+        <li><code><a href="https://content.capitaloneinvesting.com/mgdcon/core/css/one-design-core.css">one-design-core.css</a></code> only includes styles found in this style guide.</li>
+        <li><code><a href="https://content.capitaloneinvesting.com/mgdcon/core/css/one-design.css">one-design.css</a></code> includes everything from the core file, plus everything else that comes with Bootstrap.</li>
     </ul>
-    <h3>Using with SCSS</h3>
+    <p>Expanded and minified versions of these stylesheets are kept at the following location on the MGDCON server:</p>
+    <pre>smb://files.sharebuilder.com/staging/Marketing_Content/MgdCon/core/css/</pre>
+
+    <h3 class="regular">Using with SCSS</h3>
     <p>To use with SCSS, simply import the partials you need into your project file.  Refer to <code>one-design-core.scss</code> as an example of how to do this correctly</p>
     <p>Here are a few tips on working with these partials:</p>
     <ul>

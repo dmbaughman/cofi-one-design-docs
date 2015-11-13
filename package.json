@@ -13,7 +13,7 @@
   "author": "David Baughman <david.baughman@capitalone.com>",
   "license": "ISC",
   "dependencies": {
-    "cofi-one-design": "git+https://github.kdc.capitalone.com/cofi-brand-marketing/cofi-one-design.git"
+    "cofi-one-design": "git+https://github.kdc.capitalone.com/cofi-brand-marketing/cofi-one-design.git#v1.0.2"
   },
   "devDependencies": {
     "browserify": "^11.0.1",
