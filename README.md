@@ -1,5 +1,7 @@
 # Capital One Investing Style Guide Generator
 
+View the style guide at: [https://github.kdc.capitalone.com/pages/cofi-brand-marketing/style-guide/](https://github.kdc.capitalone.com/pages/cofi-brand-marketing/style-guide/)
+
 ## Install
 
 After installing [Node](http://nodejs.org) on your development environment, you can install all the dependencies necessary for this project with a single command.
