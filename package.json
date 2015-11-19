@@ -1,6 +1,6 @@
 {
   "name": "style-guide",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Documentation generator for COFI Style Guide",
   "main": "index.js",
   "scripts": {
